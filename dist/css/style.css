@@ -6367,15 +6367,16 @@ __content {
             box-shadow: 0px 2px 4.75px 0.35px rgba(0, 0, 0, 0.35);
     border: 1px solid #ffffff;
     background: #ffffff;
-    max-width: 46.875rem;
-    max-height: 20.9375rem;
+    max-width: 35.75rem;
+    max-height: 24.0625rem;
     position: absolute;
     top: -100px;
-    left: 410px;
+    left: 390px;
     z-index: 9999999;
     padding: 0;
   }
   .main-left__title {
+    white-space: nowrap;
     font-size: 1.25rem;
     font-family: "Roboto", sans-serif;
     padding: 70px 155px 40px  55px;
@@ -6394,7 +6395,7 @@ __content {
     margin: 0;
   }
   .fa-mortar-board:before, .fa-graduation-cap:before {
-    padding-right: 25px;
+    padding-right: 1.5625rem;
     margin: 0;
   }
   .fa-angle-up {
@@ -6404,16 +6405,19 @@ __content {
   .fa-angle-up:before {
     content: "\F106";
     display: block;
+    position: absolute;
+    right: 37px;
+    top: -15px;
   }
   .which-main {
-    margin-top: 16.25rem;
+    margin-top: 18.75rem;
     margin-bottom: 30px;
     border: solid 1px #ffffff;
     -webkit-box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
     background: white;
-    max-width: 36.5625rem;
-    margin-left: 27.0625rem;
+    max-width: 35.8125rem;
+    margin-left: 25.8125rem;
   }
   .which-main__title {
     font-size: 1.25rem;
@@ -6429,7 +6433,7 @@ __content {
   .fa-angle-down {
     display: block;
     position: relative;
-    left: 30.625rem;
+    left: 27.8125rem;
     top: -0.9375rem;
   }
   .ea-title {
@@ -6522,7 +6526,7 @@ __content {
   .main-right__img2 {
     position: relative;
     top: -24.375rem;
-    right: 2.8125rem;
+    right: 4.0625rem;
     border: solid 1px #ffffff;
     -webkit-box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
@@ -6540,10 +6544,6 @@ __content {
     position: relative;
     top: 0.625rem;
     color: #005298;
-  }
-  .fa-angle-up:before {
-    content: "\F106";
-    display: block;
   }
   .slider {
     max-width: 1300px;
