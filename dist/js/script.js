@@ -12,7 +12,7 @@ $('#slider').slick({
     centerPadding: '0px',
     slidesToShow: 4,
     autoplay:true,
-    arrows: false,
+    arrows: true,
 
     responsive: [
         {
