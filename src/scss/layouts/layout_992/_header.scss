@@ -1,0 +1,381 @@
+.top-header {
+
+  @include flex-direction(row);
+}
+.logo-box{
+  margin-bottom: 0;
+}
+
+
+
+.logo-box__title{
+  display: block;
+  font-size: rem(20px);
+  text-transform: uppercase;
+  font-family: $fontFamily;
+}
+.logo-box__title1{
+  display: none;
+  font-size: rem(20px);
+  text-transform: uppercase;
+  font-family: $fontFamily;
+}
+.logo-box {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $white;
+  padding-left: rem(215px);
+  padding-right: rem(115px);
+
+
+  @include e(title) {
+ padding-top: rem(10px);
+    font-size: rem(20px);
+    text-transform: uppercase;
+    font-family: $fontFamily;
+
+
+
+  }
+
+}
+
+.fa-search{
+  z-index: 99999;
+  position: absolute;
+  top:25%;
+
+  left: 95%;
+}
+.fa-bell{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+
+}
+.main-right {
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  border: 1px solid $white;
+  background: $white;
+  max-width: rem(245px);
+  max-height: rem(419px);
+  position: absolute;
+  top: rem(-130px);
+  left: rem(1040px);
+  text-align: center;
+  z-index: 9999999;
+  margin-top: rem(30px);
+}
+.midle-box{
+  @include display (flex);
+
+  color: white;
+  margin-top: rem(275px);
+}
+
+.left-midle{
+  @include display (flex);
+  @include flex-direction (column);
+  margin-left: rem(470px);
+  font-family: $fontFamily;
+  margin-bottom: 0;
+
+  @include e(title){
+    font-size: rem(30px);
+display: block;
+
+  }
+  @include e(img){
+    padding-right: rem(0px);
+    margin: rem(0px);
+
+
+  }
+  @include e(content){
+    font-size: rem(12px);
+    padding-left: rem(50px);
+    display: block;
+  }
+}
+
+
+.right-midle{
+  display: block;
+  @include display (flex);
+  @include flex-direction (column);
+  margin-left: rem(230px);
+  font-family: $fontFamily;
+  @include e(title){
+    font-size: rem(30px);
+
+  }
+
+  @include e(content){
+    font-size: rem(12px);
+    margin-bottom: rem(150px);
+
+  }
+}
+.right-box__number{
+  position: relative;
+  border: 6px solid $red;
+  background: $red;
+  color: $white;
+  border-radius: 5px;
+  left: 8px;
+  top:-20px;
+  display: block;
+}
+
+
+.main-left{
+  box-shadow: 0px 2px 4.75px 0.35px rgba(0, 0, 0, 0.35);
+  border: 1px solid $white ;
+  background: $white;
+  max-width: rem(750px);
+  max-height: rem(335px);
+  position: absolute;
+  top:-100px;
+  left: 410px;
+  z-index: 9999999;
+  padding: 0;
+
+  @include e(title){
+    font-size: rem(20px);
+    font-family: $fontFamily;
+    padding:70px 155px 40px  55px;
+
+  }
+  @include e(content){
+    max-width: rem(560px);
+    text-align: left;
+    font-size: rem(15px);
+    font-family: $fontFamily;
+    padding-left:rem(105px) ;
+    padding-right: rem(90px);
+    padding-bottom: rem(105px);
+
+  }
+  .fa{
+   display: inline-block;
+    margin: 0;
+  }
+}
+
+.fa-mortar-board:before, .fa-graduation-cap:before{
+  padding-right: 25px;
+  margin: 0;
+}
+
+.fa-angle-up{
+  position: relative;
+  left:rem(130px);
+
+}
+.fa-angle-up:before {
+  content: "\f106";
+  display: block;
+}
+
+.which-main{
+  margin-top: rem(260px);
+  margin-bottom: 30px;
+  border: solid 1px $white;
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  background: white;
+  max-width: rem(585px);
+  margin-left: rem(430px) ;
+  @include e(title){
+    font-size: rem(20px);
+    font-family: $fontFamily;
+    color: $black;
+    padding-left: 50px;
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
+
+
+  }
+  .fa {
+    display: block;
+  }
+}
+
+.fa-angle-down{
+  display: block;
+  position: relative;
+ left:rem(495px);
+  top:rem(-15px)
+}
+
+.ea-title{
+  font-size: rem(25px);
+  font-family: $fontFamily;
+  font-weight: 300;
+  color: $black;
+  padding-left: rem(450px);
+  z-index: 999999;
+}
+.ea{
+  margin-bottom: rem(40px);
+}
+
+.main-right1 {
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  border: 1px solid $white;
+  background: $white;
+  max-width: rem(215px);
+  max-height: rem(419px);
+  margin-top: rem(50px);
+  text-align: center;
+  z-index: 9999999;
+}
+.main-right__title1{
+  font-size: rem(20px);
+  font-family: $fontFamily;
+  color: $black;
+  margin-right: rem(50px);
+  display: block;
+
+}
+
+.main-right__content1{
+
+  position: relative;
+  color: $black;
+  font-size: rem(13px);
+  font-family: $fontFamily;
+  text-align: center;
+  padding: 0;
+  padding-bottom: rem(25px);
+display: block;
+  margin-bottom: rem(15px);
+
+
+}
+
+.main-right__country1{
+  color: $lightblack;
+  font-size: rem(12px);
+  font-family: $fontFamily;
+  text-align: left;
+
+}
+
+
+.main-right__content1::after {
+  content: '';
+  width: rem(185px);
+  height: 1px;
+  background: $lightgray;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.map-left1{
+  color: $gray;
+  top: rem(385px);
+  left: rem(30px);
+}
+.map1{
+  padding-left: rem(53px);
+  display: block;
+}
+.fa-check-square{
+  color: $navy;
+  margin-left: -95px;
+}
+.school1{
+  padding-left: 40px;
+}
+
+.fa-check-square:before {
+  content: "\f14a";
+  padding-left: rem(65px);
+}
+
+.fa-star-o{
+  padding-left: rem(180px);
+  position: relative;
+  top:rem(10px);
+  color: $navy;
+}
+.fa-star-o:before {
+  content: "\f006";
+  display: block;
+}
+.main-right__img2{
+  position: relative;
+  top:rem(-390px);
+  right: rem(45px);
+  border: solid 1px $white;
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  background: $white;
+  border-radius: 5px;
+  z-index: 999999;
+}
+
+.main-right__img3{
+  margin-top: rem(15px);
+  padding: rem(10px);
+
+}
+.star{
+  padding-left: rem(160px);
+  position: relative;
+  top:rem(10px);
+  color: $navy;
+}
+
+.fa-angle-up:before {
+  content: "\f106";
+  display: block;
+}
+
+.slider{
+  max-width: 1300px;
+  padding-left: 410px;
+  margin-bottom: 400px;
+}
+.star .fa{
+  display: block;
+}
+
+.main-right__img4{
+  display: none;
+}
+
+.main-right__img3{
+  display: block;
+}
+
+figcaption {
+
+  display: none;
+
+}
+
+.gallery-content{
+  border: 1px solid #4b4e51;
+  background-color: #4b4e51;
+display: none;
+
+  @include e(title){
+display: none;
+    font-size: rem(10px);
+    color:$white;
+    font-family: $fontFamily;
+
+
+  }
+}
+.main-right__content2{
+  color: $black;
+  font-family: $fontFamily;
+  font-size: rem(10px);
+  display: none;
+}

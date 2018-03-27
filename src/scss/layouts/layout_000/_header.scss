@@ -1,0 +1,134 @@
+.top-header {
+  padding-top:rem(20px);
+  padding-bottom:rem(18px);
+  text-align: center;
+  background: $green;
+
+
+    @include display(flex);
+
+    @include flex-direction(row);
+
+}
+.logo-box__title1{
+  display: block;
+  font-size: rem(20px);
+  text-transform: uppercase;
+  font-family: $fontFamily;
+}
+.logo-box {
+  display: inline-block;
+text-transform: uppercase;
+color: $white;
+padding-left: rem(15px);
+  padding-right: rem(15px);
+
+
+  @include e(title) {
+    font-size: rem(20px);
+    text-transform: uppercase;
+    font-family: $fontFamily;
+
+display: none;
+
+  }
+
+}
+
+
+
+
+.top-box{
+  background: url(#{$imgPath}bg.png) no-repeat 0 center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.fa-map-marker{
+  z-index: 99999;
+  position: absolute;
+  top:25%;
+  color: $lightRed;
+  left: rem(5px);
+}
+
+.fa-caret-down{
+  z-index: 99999;
+  position: absolute;
+  top:25%;
+
+  left: rem(35px);
+}
+.fa-bell{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: $white;
+
+}
+.fa-search{
+  z-index: 99999;
+  position: absolute;
+  top:25%;
+
+  left: 90%;
+}
+.right-box{
+  padding-left: rem(14px);
+  @include e(img){
+    padding-left: rem(40px);
+  }
+}
+
+.midle-box{
+
+
+  color: white;
+  margin-top: rem(275px);
+}
+.left-midle{
+  @include display (flex);
+  @include flex-direction (column);
+  margin-left: rem(0px);
+  font-family: $fontFamily;
+  margin-bottom: rem(50px);
+
+  @include e(title){
+    font-size: rem(30px);
+   @include display (flex);
+    @include flex-direction (column);
+    text-align: center;
+
+  }
+  @include e(img){
+    padding-right: rem(0px);
+    width: 41px;
+    margin-top: rem(265px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  @include e(content){
+    font-size: rem(12px);
+    padding-left: rem(50px);
+    display: none;
+  }
+}
+
+.right-midle{
+  display: none;
+
+
+}
+
+@include e(content){
+  font-size: rem(12px);
+  margin-bottom: rem(150px);
+
+}
+
+.right-box__number{
+ display: none;
+}
+

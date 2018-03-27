@@ -1,0 +1,369 @@
+.main-content{
+   background: $bg;
+ }
+
+.slider-content {
+  position: relative;
+
+
+  figcaption {
+    position: absolute;
+    color: $white;
+    top: rem(118px);
+    left:rem(125px);
+    text-align: center;
+    display: block;
+
+  }
+
+  @include e(title) {
+    font-size: rem(25px);
+
+    margin-bottom: rem(12px);
+
+
+
+  }
+}
+
+
+.slider1{
+  display: none;
+
+  margin-bottom: 400px;
+}
+.main{
+  @include display (flex);
+  position: relative;
+color: black;
+}
+.main-left{
+  box-shadow: 0px 2px 4.75px 0.35px rgba(0, 0, 0, 0.35);
+  border: 1px solid $white ;
+  background: $white;
+  max-width: rem(307px);
+  max-height: rem(518px);
+  position: absolute;
+  top:rem(-45px);
+  left: 0px;
+  z-index: 9999999;
+  margin-left: rem(25px);
+  padding: rem(25px);
+
+  @include e(title){
+    font-size: rem(20px);
+    font-family: $fontFamily;
+padding-top: rem(55px);
+    padding-left: rem(47px);
+    padding-bottom: rem(45px);
+
+  }
+  @include e(content){
+
+    text-align: left;
+    font-size: rem(15px);
+    font-family: $fontFamily;
+    padding-bottom: rem(80px);
+
+  }
+  .fa{
+   @include display (flex);
+   @include flex-direction (column);
+
+  }
+
+}
+
+.fa-mortar-board:before, .fa-graduation-cap:before{
+  padding-right: rem(65px);
+  margin: auto;
+  margin-bottom: rem(30px);
+}
+
+.main-right{
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  border: 1px solid $white ;
+  background: $white;
+  max-width: rem(304px);
+  max-height: rem(419px);
+  position: absolute;
+  top:rem(-660px);
+  left: rem(30px);
+  text-align: center;
+  z-index: 9999999;
+margin-top: rem(30px);
+  @include e(title){
+    font-size: rem(20px);
+    font-family: $fontFamily;
+    color: $black;
+    margin-right: rem(50px);
+
+  }
+
+  @include e(content){
+
+    position: relative;
+    color: $black;
+    font-size: rem(13px);
+    font-family: $fontFamily;
+    text-align: center;
+    padding: 0;
+    padding-bottom: rem(25px);
+
+    margin-bottom: rem(15px);
+
+
+  }
+  @include e(img){
+    margin-top: rem(15px);
+    padding: rem(10px);
+  }
+  @include e(img1){
+    position: relative;
+    top:rem(-405px);
+    right: rem(75px);
+    border: solid 1px $white;
+    box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    background: $white;
+    border-radius: 5px;
+    z-index: 999999;
+
+  }
+  @include e(country){
+    color: $lightblack;
+    font-size: rem(12px);
+    font-family: $fontFamily;
+    text-align: left;
+
+  }
+
+}
+.main-right__content::after {
+  content: '';
+  width: rem(215px);
+  height: 1px;
+  background: $lightgray;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.map-left{
+  color: $gray;
+  top: rem(350px);
+  left: rem(30px);
+}
+.map{
+  padding-left: rem(53px);
+}
+.fa-check-square{
+  color: $navy;
+  margin-left: -95px;
+}
+.school{
+  padding-left: 40px;
+}
+
+.fa-check-square:before {
+  content: "\f14a";
+padding-left: rem(65px);
+}
+
+.fa-star-o{
+  padding-left: rem(180px);
+position: relative;
+  top:rem(10px);
+  color: $navy;
+}
+.fa-star-o:before {
+  content: "\f006";
+  display: none;
+}
+.fa-angle-up{
+ display: none;
+}
+.which-main{
+  margin-top: rem(500px);
+  margin-bottom: 30px;
+  border: solid 1px $white;
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  background: white;
+  max-width: rem(310px);
+  margin-left: rem(25px) ;
+  .fa {
+    @include display (flex);
+    @include flex-direction (column);}
+
+  .fa-angle-down{
+    display: none;
+  }
+@include e(title){
+  font-size: rem(20px);
+  font-family: $fontFamily;
+  color: $black;
+  padding-left: 50px;
+  padding-top: rem(30px);
+  padding-bottom: rem(30px);
+
+
+}
+}
+
+.ea-title{
+  font-size: rem(15px);
+  font-family: $fontFamily;
+  font-weight: 400;
+  color: $black;
+  padding-left: rem(22px);
+  z-index: 999999;
+}
+.ea{
+  margin-bottom: rem(40px);
+}
+
+
+
+.main-right1 {
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+  border: 1px solid $white;
+  background: $white;
+
+  max-height: rem(419px);
+
+  text-align: center;
+  z-index: 9999999;
+}
+.main-right__title1{
+    font-size: rem(20px);
+    font-family: $fontFamily;
+    color: $black;
+    margin-right: rem(50px);
+  display: none;
+
+  }
+
+.main-right__content1{
+display: none;
+    position: relative;
+    color: $black;
+    font-size: rem(13px);
+    font-family: $fontFamily;
+    text-align: center;
+    padding: 0;
+    padding-bottom: rem(25px);
+
+    margin-bottom: rem(15px);
+
+
+  }
+
+  .main-right__country1{
+    color: $lightblack;
+    font-size: rem(12px);
+    font-family: $fontFamily;
+    text-align: left;
+
+  }
+
+
+.main-right__content1::after {
+  content: '';
+  width: rem(185px);
+  height: 1px;
+  background: $lightgray;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.map-left1{
+  color: $gray;
+  top: rem(193px);
+  left: rem(10px);
+}
+.map1{
+  padding-left: rem(23px);
+  display: flex;
+}
+.fa-check-square{
+  color: $navy;
+  margin-left: -95px;
+}
+.school1{
+  padding-left: 40px;
+}
+
+.fa-check-square:before {
+  content: "\f14a";
+  padding-left: rem(65px);
+}
+
+.fa-star-o{
+  padding-left: rem(180px);
+  position: relative;
+  top:rem(10px);
+  color: $navy;
+}
+.main-right__img2{
+  position: relative;
+  top:rem(-160px);
+  right: rem(100px);
+  border: solid 1px $white;
+  box-shadow: 0px 2px 4.75px 0.3px rgba(0, 0, 0, 0.3);
+
+  background: $white;
+  border-radius: 5px;
+  z-index: 999999;
+}
+
+.main-right__img3{
+  margin-top: rem(0px);
+  padding: rem(0px);
+  display: none;
+
+}
+
+.main-right__img4{
+  display: block;
+  width: 100%;
+}
+.star .fa{
+ display: none;
+}
+
+.fa-angle-up:before {
+  content: "\f106";
+  display: none;
+}
+.gallery-content{
+  border: 1px solid #4b4e51;
+  background-color: #4b4e51;
+
+
+  @include e(title){
+    font-size: rem(10px);
+    color:$white;
+    font-family: $fontFamily;
+
+
+  }
+}
+
+.main-right__content2{
+  color: $black;
+  font-family: $fontFamily;
+  font-size: rem(10px);
+  display: block;
+  text-align: left;
+  padding: rem(10px);
+}
+
+
+.main-right__country1{
+  padding-left: rem(5px);
+}
